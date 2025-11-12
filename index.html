@@ -33,7 +33,7 @@
       <div class="hero-text">
         <h2>Hello, I'm <span>Amroune Ouarda</span></h2>
         <p>Master 2 – Ingénierie des Données et Technologies Web</p>
-        <p class="subtitle">Creative Web Developer & Data Engineer</p>
+        <p class="subtitle">Creative Web Developer </p>
         <a href="#projects" class="btn">My Projects</a>
       </div>
     </div>
@@ -79,31 +79,38 @@
   </section>
 
 
-  <!-- 🔹 SECTION PROJETS -->
-  <section id="projects" class="section projects">
-    <h2> Mes projets</h2>
-    <div class="project-grid">
+<!-- 🔹 SECTION PROJETS -->
+<section id="projects" class="section projects">
+  <h2>Mes Projets Blender</h2>
+  <div class="project-grid">
 
-      <div class="project-card">
-        <h3>Projet  </h3>
-        <p> la modélisation 3D avec Blender</p>
-        <a href="#" class="btn-small">Voir le projet</a>
-      </div>
-
-      <div class="project-card">
-        <h3>TP1</h3>
-        <p>crération d'un site web</p>
-        <a href="#" class="btn-small">Voir le projet</a>
-      </div>
-
-      <div class="project-card">
-        <h3>TP2</h3>
-        <p>création d'un scéne avec Blender</p>
-        <a href="#" class="btn-small">Voir le projet</a>
-      </div>
-
+    <div class="project-card">
+      <h3>Tp 0</h3>
+      <p> TP 0  avec Blender</p>
+      <button class="btn-small" onclick="openProject('maison')">Voir le projet</button>
     </div>
-  </section>
+
+    <div class="project-card">
+      <h3>TP 1</h3>
+      <p>TP1 avec Blender</p>
+      <button class="btn-small" onclick="openProject('logo')">Voir le projet</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🔹 MODAL POUR LES PROJETS -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProject()">&times;</span>
+    <h3 id="projectTitle"></h3>
+    <video id="projectVideo" controls></video>
+    <div class="project-links">
+      <a id="reportLink" href="#" target="_blank">Télécharger le rapport</a>
+      <a id="blendLink" href="#" target="_blank">Télécharger le fichier .blend</a>
+    </div>
+  </div>
+</div>
 
   <!-- ===== CONTACT ===== -->
   <section id="contact" class="contact">
