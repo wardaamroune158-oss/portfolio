@@ -9,15 +9,13 @@ function openProject(projectId) {
   let projectData = {
     maison: {
       title: "Modélisation 3D en Blender",
-      video: "projects/maison.mp4",
-      report: "projects/maison_rapport.pdf",
-      blend: "projects/tp2.blend"
+      blend: "projects/TP1.blend"
     },
     logo: {
       title: "Modélisation 3D en Blender",
-      video: "projects/logo.mp4",
-      report: "projects/logo_rapport.pdf",
-      blend: "projects/logo.blend"
+      video: "projects/maison.mp4",
+      report: "projects/Rapport de tp1 .pdf",
+      blend: "projects/tp2.blend"
     },
     robot: {
       title: "Modélisation 3D en Blender",
